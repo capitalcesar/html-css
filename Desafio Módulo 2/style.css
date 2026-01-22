@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'IDroid';
+    src: url(fontes/idroid.otf);
+}
+
+:root {
+    --cor1 : white;
+    --cor2 : #c5ebd6;
+    --cor3: #3cdb83;
+    --cor4: #276544;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    color: var(--cor1);
+    text-align: center;
+    padding: 20px;
+}
+header > h1 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+header > p {
+    inline-size: 400px;
+    margin: auto;
+}
+nav {
+    background-color: var(--cor4);
+    padding: 5px;
+}
+body {
+    background-color: hsl(146, 61%, 70%);
+    margin: 0px;
+}
+main {
+    background-color: var(--cor1);
+    width: 53%;
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+}
+main > h1, h2 {
+    font-family: 'IDroid', sans-serif;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+}
+main > img {
+    display: block;
+    margin: auto;
+}
+.botoes{
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 6px;
+    font-weight: bold;
+    inline-size: 10px;
+}
+.botoes:hover {
+    background-color: var(--cor3);
+}
+div {
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    background-color: var(--cor2);
+    padding: 10px;
+    padding-top: 0px;
+    border: 2px transparent;
+
+}
+#mini-titulo {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+
+}

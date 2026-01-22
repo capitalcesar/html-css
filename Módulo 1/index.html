@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Pictogrammers-Material-Duck.24.png" type="image/x-icon"> <!---favicon-->
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+<body>
+    <h1>Descobertas de HTML/CSS</h1>
+
+    <h2>Textos Alternativos</h2>
+
+    <h3>Como escrever símbolos como texto:</h3>
+    <p>Basta usar & + sigla so simbolo em ingles + ;<br>
+    Ex.: &pound;</p>
+
+    <h3>Como escrever emojis:</h3>
+    <p>Bastar usar &#x + o hex do emoji (só olhar no site)<br>
+    Ex.: &#x1F525;</p>
+
+    <h2>Imagens</h2>
+
+    <h3>JPEG X PNG</h3>
+    <p>Só usar PNG caso a imagem precise de transparência ou precise ser diminuida sem perca de qualidade, pois o JPEG diminui o tamanho do arquivo, melhorando o carregamento do site</p>
+
+    <h3>Colocando imagens</h3>
+    <p>Na mesma pasta:</p> <!--- Usar "Control + Espaço" para autocompletar o nome do arquivo e "Control + Shift + P  -> abbrev" para "envelopar" uma parte do código em um elemento --->
+    <img src="patoremake.jpg" alt="Pato filhote">
+    <p>Em pastas diferentes</p>
+    <img src="imagens/pato2remake.jpg" alt="Pato verde">
+    <p>Imagens externas:</p>
+    <img src="https://t4.ftcdn.net/jpg/01/40/74/85/240_F_140748560_TxeSnDJesHoTQOarbOQ4iZeNKgZsM8yg.jpg" alt="Pato branco">
+    <p>Imagens Dinâmicas</p>
+    <picture> <!---Atenção a ordem, do menor para o maior-->
+      <source media="(max-width: 700px)" srcset="imagens/pequena.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+      <img src="imagens/grande.png" alt="Imagem Flexível">
+    </picture>
+    <h2>Formatações:</h2>
+    <p><strong>Negrito</strong></p>
+    <p><em>Itálico</em></p>
+    <p><mark>Marcado</mark></p>
+    <p><del>Riscado</del></p>
+    <p><u>Sublinhado</u></p>
+    <p><sup>Sobrescrito</sup></p>
+    <p><sub>Subscrito</sub></p>
+    <p><code>código Fonte (javascript)</code></p> <!--- Control+Shift+Tab pra aproximar o espaçamento da esquerda)-->
+    <p><pre>
+            Considerarando
+            os
+            espaços
+    </pre></p>
+    <p>Guanabara disse:<q>Citação Simples</q></p>
+    <p>Citação Completa:</p>
+    <blockquote cite="https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24">Isso é uma citação completa espaçada</blockquote>
+    <p><abbr title="Abreviação">abrev</abbr></p>
+    <p><bdo dir="rtl">Invertido</bdo></p>
+    <p><marquee behavior="scrool" direction="rtl">Movimento</marquee></p>
+
+    <h2>Links</h2>
+    <p>Externos:</p>
+    <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" rel="external" target="_blank">Assim faz um link externo</a>
+    <p>Internos:</p>
+    <a href="pag2.htm" ref="next" target="_self">Acesse a segunda página</a>
+    <p>Leitor/Download:</p>
+    <p>Ordem Paranormal - Livro</p>
+    <ul>
+        <li><a href="pdf/outros-ordem-paranormal.pdf"> Leitor do livro em PDF</a></li>
+        <li><a href="pdf/outros-ordem-paranormal.zip" download="outros-ordem-paranormal.zip" type="application/zip"> Download do livro em ZIP</a></li>
+
+    </ul>
+
+    <h2>Áudios</h2>
+    <audio preload="metadata" controls loop> <!--O metadata é importante para poder exibir o site sem precisar baixar o aúdio inteiro, apenas quando o usuário clicar para escutar, baixando apenas os dados-->
+        <source src="midia/miaw-miaw-miaw-made-with-Voicemod.mp3" type="audio/mpeg">
+        <source src="midia/miaw-miaw-miaw-made-with-Voicemod.ogg" type="audio/ogg">
+        <source src="midia/miaw-miaw-miaw-made-with-Voicemod.wav" type="audio/wav">
+        <p>Seu navegador não suporta o elemento de áudio.</p> <a href="midia/miaw-miaw-miaw-made-with-Voicemod.mp3">Baixe aqui</a>
+        <!--Ele vai tentar carregar o áudio em ordem de escrita -->
+    </audio>
+
+    <h2>Vídeos</h2>
+      <h3>Vídeos internos</h3>
+      <video controls width="640" height="360" poster="imagens/ULVH-Cats-sleep-shutterstock_2295390477.png"> <!--Poster é a imagem que aparece antes do vídeo ser reproduzido-->
+        <source src="midia/5672369-sd_960_540_30fps.mp4" type="video/mp4">
+          <!--Fallback para navegadores que não suportam o formato MP4 -->
+        <source src="midia/5672369-sd_960_540_30fps.ogv" type="video/ogg">
+        <source src="midia/5672369-sd_960_540_30fps.webm" type="video/webm">
+        <source src="midia/5672369-sd_960_540_30fps.m4v" type="video/m4v">
+        <p>Seu navegador não suporta o elemento de vídeo.</p>
+         <!--Ordernar por ordem de peso-->
+          <!--Vídeos hospedados assim consomem muito tráfego de dados e precisa ser avisado ao cliente-->
+      </video>
+
+      <h3>Videos do Youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+ 
+</body>
+</html>
