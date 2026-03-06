@@ -1,7 +1,13 @@
+div#container{
+    overflow-x: auto;
+    box-shadow: 1px 1px 2px rgba(158, 158, 158, 0.89);
+    position: relative;
+    width: 100%;
+}
+
 table{
     border-collapse: collapse;
     width: 100%;
-    box-shadow: 1px 1px 2px rgba(158, 158, 158, 0.89);
     text-align: center;
     position: relative;
 }
@@ -24,4 +30,7 @@ th#blank {
     border: none;
     background-color: white;
 
+}
+col.turmas{
+    width: 10%;
 }
