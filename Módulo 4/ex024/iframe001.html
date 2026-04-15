@@ -4,12 +4,27 @@
     <meta charset="PT-BR">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframes</title>
+    <style>
+        iframe {
+            display: block;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <p>Acessando o site do 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="auto"> no <a href="https://www.cursoemvideo.com" target="_blank">site do Curso em Vídeo</a></iframe>
-    para aprender a programar
-    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quasi. Reprehenderit neque consequatur sint itaque exercitationem excepturi ducimus ipsam eum nobis impedit, cupiditate natus accusamus ab fugiat porro labore quas?</p>
+        <iframe src="tabelajica.html" frameborder="0" height="275" width="500" sandbox="sandbox" referrerpolicy="no-referrer"> no <a href="https://www.cursoemvideo.com" target="_blank">site do Curso em Vídeo</a></iframe>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, laborum. Cumque molestiae exercitationem doloribus accusamus eaque nihil aut dolore, facilis, dolorum consectetur vero numquam sit excepturi eius earum atque autem?</p>
+
+    <!-- sandbox é para aumentar a segurança do iframe, bloqueando recursos potencialmente perigosos (pode usar algumas excessões, como allow-scripts e allow-same-origin)-->
+     <!-- referrerpolicy é para controlar o envio de informações de referência, aumentando a privacidade do usuário -->
+
+    <p>Iframe com link:</p>
+    <iframe src="blank.html" frameborder="0" name="iframe1"></iframe>
+    <a href="tabelajica.html" target="iframe1" rel="noopener noreferrer">Mais informações sobre iframes</a>
+
+    <p>Importanto iframes</p>
+    
     
 </body>
 </html>
