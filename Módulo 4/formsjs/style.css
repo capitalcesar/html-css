@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#resultados {
+    display: flex;
+    align-items: auto;
+    justify-content: space-around;
+    position: absolute;
+    margin: auto;
+}
+#resultados > * {
+    display: block;
+    border: 1px solid black;
+    padding: 10px;    
+    display: block;
+}
+
+@media (30em <= width <= 50em) {
+    #resultados {
+        flex-direction: column;
+    }
+}

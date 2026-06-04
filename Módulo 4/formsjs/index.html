@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Calculadoras</h1>
+    <form>
+        <p>
+            <label for="inumero1">Número 1:</label>
+            <input type="number" name="numero1" id="inumero1" placeholder="Digite o primeiro número"
+            oninput="isoma.innerHTML = Number(numero1.value) + Number(numero2.value); 
+            isubtracao.innerHTML = Number(numero1.value) - Number(numero2.value); 
+            imultiplicacao.innerHTML = Number(numero1.value) * Number(numero2.value); 
+            idivisao.innerHTML = Number(numero1.value) / Number(numero2.value)">
+        </p>
+        <p>
+            <label for="inumero2">Número 2:</label>
+            <input type="number" name="numero2" id="inumero2" placeholder="Digite o segundo número" oninput="isoma.innerHTML = Number(numero1.value) + Number(numero2.value); 
+            isubtracao.innerHTML = Number(numero1.value) - Number(numero2.value); 
+            imultiplicacao.innerHTML = Number(numero1.value) * Number(numero2.value); 
+            idivisao.innerHTML = Number(numero1.value) / Number(numero2.value)">
+        </p>
+        <h3>Resultados:</h3>
+        <div id="resultados">
+            <div>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+            </div>
+            <div>
+            <label for="isubtracao">Subtração:</label>
+            <output name="subtracao" id="isubtracao">0</output>
+            </div>
+            <div>
+            <label for="imultiplicacao">Multiplicação:</label>
+            <output name="multiplicacao" id="imultiplicacao">0</output>
+            </div>
+            <div>
+            <label for="idivisao">Divisão:</label>
+            <output name="divisao" id="idivisao">0</output>
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>
